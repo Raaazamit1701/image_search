@@ -47,7 +47,11 @@ let search ="";
     
 }
 
-btn.addEventListener('click' ,searchimage);
+btn.addEventListener('click' ,(event)=>{
+    event.preventDefault();
+    page=1;
+    searchimage()
+});
 
 
 addMore.addEventListener('click',()=>{
